@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BVH_TS_Converter", "BVH_TS_Converter\BVH_TS_Converter.csproj", "{A53B0F05-84FE-49DD-975C-1F3DC2D0EE07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A53B0F05-84FE-49DD-975C-1F3DC2D0EE07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53B0F05-84FE-49DD-975C-1F3DC2D0EE07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53B0F05-84FE-49DD-975C-1F3DC2D0EE07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53B0F05-84FE-49DD-975C-1F3DC2D0EE07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {955FCD76-04AB-45DC-A50A-4BA9FDAFA0CA}
+	EndGlobalSection
+EndGlobal
