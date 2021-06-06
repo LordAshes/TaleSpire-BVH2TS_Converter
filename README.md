@@ -63,4 +63,12 @@ that do.
 The skeleton file for the converter can list totally non-human bones for use with non-human skeleton structures. Obviously these types of
 animations will be useless when applied to human minis but the animations can still be used on mini of the appropriate skeleton structure. 
 
+# Sample Work Flow Using Mixamo Animation And Blender
 
+1. Download a desired Miaxmo animation.
+2. Open Blender
+3. Import the Mixamo Animation
+4. Remove Light, Camera and Collection so that only the imported asset remains
+5. Export to BVH
+6. Place BVH in same folder as converter
+7. Run the converter using one of the skeleton options (selection depends on what kind of animation is being done) 
