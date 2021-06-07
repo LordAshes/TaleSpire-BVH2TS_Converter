@@ -82,11 +82,11 @@ namespace BVH_TS_Converter
             string suffix = "";
             string subsuffix = "";
             // Pointer into the changes array
-            int pnt = 0;
+            int pnt = 3;
             // Process each frame
             for (int frame = 0; frame < frames; frame++)
             {
-                Console.WriteLine("Processing Frame " + frame+"...");
+                Console.WriteLine("Processing Frame " + frame+" of "+frames+"...");
                 if (frame != (frames - 1)) { suffix = ","; } else { suffix = ""; }
                 // Append the JSON frame structure
                 System.IO.File.AppendAllText(fileName, "  \"" + frame + "\":\r\n");
@@ -101,7 +101,7 @@ namespace BVH_TS_Converter
                         System.IO.File.AppendAllText(fileName, "    \"" + (bones[b] + "\":                         ").Substring(0, 25) + " {\"character\": \"{General}\", \"bone\": \"" + bones[b] + "\", \"target\": {\"ax\": " + changes[pnt + 3] + ", \"ay\": " + (float.Parse(changes[pnt + 4]) * -1) + ", \"az\": " + (float.Parse(changes[pnt + 5]) * -1) + ", \"px\": \"NaN\", \"py\": \"NaN\", \"pz\": \"NaN\"}}" + subsuffix + "\r\n");
                     }
                     // Advance the pointer into the change array by 6 (each bone uses 6 values: px, py, pz, ax, ay, and az) regardless if the bone was written
-                    pnt = pnt + 6;
+                    pnt = pnt + 3;
                 }
                 // Append the JSON frame end structure
                 System.IO.File.AppendAllText(fileName, "  }"+suffix+"\r\n");
